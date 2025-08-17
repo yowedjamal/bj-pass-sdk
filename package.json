@@ -1,22 +1,21 @@
-
 {
   "name": "bj-pass-sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "BjPass Authentication Widget (TypeScript) — OAuth2/OIDC widget for browser apps",
   "license": "MIT",
   "author": "yowedjamal",
   "type": "module",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "unpkg": "dist/index.global.js",
-  "jsdelivr": "dist/index.global.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "unpkg": "dist/index.js",
+  "jsdelivr": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.cjs.js",
-      "default": "./dist/index.esm.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
     }
   },
   "sideEffects": false,
