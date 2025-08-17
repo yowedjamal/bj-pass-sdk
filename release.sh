@@ -36,8 +36,8 @@ VERSION=$1
 validate_version $VERSION
 
 CURRENT_BRANCH=$(git branch --show-current)
-if [ "$CURRENT_BRANCH" != "master" ]; then
-  echo -e "${RED}❌ Branche actuelle: $CURRENT_BRANCH (devrait être master)${NC}"
+if [ "$CURRENT_BRANCH" != "develop" ]; then
+  echo -e "${RED}❌ Branche actuelle: $CURRENT_BRANCH (devrait être develop)${NC}"
   exit 1
 fi
 
@@ -57,7 +57,7 @@ git flow release finish -m "$VERSION" $VERSION --keepremote
 
 # 4. Push
 echo -e "${GREEN}📡 Push vers GitHub...${NC}"
-git push origin master main --tags
+git push origin develop master --tags
 
 # 5. GitHub Release
 if command -v gh &> /dev/null; then
