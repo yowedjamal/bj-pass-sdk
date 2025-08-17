@@ -1,7 +1,7 @@
 
 {
   "name": "bj-pass-sdk",
-  "version": "1.0.0-ts.0",
+  "version": "0.0.0",
   "description": "BjPass Authentication Widget (TypeScript) — OAuth2/OIDC widget for browser apps",
   "license": "MIT",
   "author": "yowedjamal",
